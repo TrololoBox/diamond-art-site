@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Галерея | Алмазные Мечты</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="side-image left"></div>
+  <div class="side-image right"></div>
+<div class="sparkle-toggle">
+  <label class="switch">
+    <input type="checkbox" id="toggleSparkles" checked>
+    <span class="slider"></span>
+  </label>
+  <span class="label-text">Стразики ✨</span>
+</div>
+  <header>
+    <h1>🖼️ Галерея работ</h1>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="gallery.html">Галерея</a>
+      <a href="order.html">Заказать</a>
+      <a href="about.html">О сборщице</a>
+    </nav>
+  </header>
+
+  <main style="display: flex; justify-content: center;">
+<div class="gallery-section">
+<div class="filters">
+  <button class="filter-button active" data-filter="all">🔮 Все</button>
+  <button class="filter-button" data-filter="flowers">🌸 Цветы</button>
+  <button class="filter-button" data-filter="cats">🐾 Кошки</button>
+  <button class="filter-button" data-filter="city">🌆 Город</button>
+</div>
+
+    <section class="gallery-grid">
+      <div class="gallery-item fade-in" style="animation-delay: 0.2s;" data-category="flowers">
+        <div class="gallery-thumb">
+          <img src="images/flowers.jpg" alt="Весенний сад" />
+        </div>
+        <h4>Весенний сад</h4>
+        <p>Цена: 2 500₽</p>
+        <button class="button">Купить</button>
+      </div>
+
+      <div class="gallery-item fade-in" style="animation-delay: 0.2s;" data-category="cats">
+        <div class="gallery-thumb">
+          <img src="images/woman_with_flowers.jpg" alt="Девушка с цветами" />
+        </div>
+        <h4>Девушка с цветами</h4>
+        <p>Цена: 2 900₽</p>
+        <button class="button">Купить</button>
+      </div>
+
+      <div class="gallery-item fade-in" style="animation-delay: 0.2s;" data-category="flowers">
+        <div class="gallery-thumb">
+          <img src="images/cats.jpg" alt="Кошачья нежность" />
+        </div>
+        <h4>Кошачья нежность</h4>
+        <p>Цена: 2 400₽</p>
+        <button class="button">Купить</button>
+      </div>
+
+      <div class="gallery-item fade-in" style="animation-delay: 0.2s;" data-category="flowers">
+        <div class="gallery-thumb">
+          <img src="images/procces_of_work.jpg" alt="В процессе" />
+        </div>
+        <h4>В работе 💫</h4>
+        <p>Скоро будет доступна!</p>
+        <button class="button" disabled>Ожидайте</button>
+      </div>
+    </section>
+</div>
+  </main>
+
+  <footer>
+    <p>💎 Алмазное вдохновение каждый день 💎</p>
+  </footer>
+  <script src="js/sparkles.js"></script>
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <img id="modal-image" src="" alt="">
+    <h2 id="modal-title">Заголовок</h2>
+    <p id="modal-price">Цена</p>
+    <a href="order.html" class="button">Заказать 💌</a>
+  </div>
+</div>
+<script src="js/sparkles.js"></script>
+
+</body>
+</html>

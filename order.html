@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Заказ | Алмазные Мечты</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="side-image left"></div>
+  <div class="side-image right"></div>
+
+  <header>
+    <h1>📦 Заказ</h1>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="gallery.html">Галерея</a>
+      <a href="order.html">Заказать</a>
+      <a href="about.html">О сборщице</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="order-section">
+      <h2>Выберите тип заказа ✨</h2>
+
+      <form class="order-form">
+        <label>
+          <input type="radio" name="orderType" value="buy" checked />
+          Хочу купить готовую мозаику
+        </label><br />
+        <label>
+          <input type="radio" name="orderType" value="send" />
+          Хочу отправить свой набор на сборку
+        </label>
+
+        <div class="form-fields">
+          <input type="text" placeholder="Ваше имя" required />
+          <input type="email" placeholder="Email" required />
+          <input type="tel" placeholder="Телефон" required />
+          <textarea placeholder="Комментарий к заказу"></textarea>
+        </div>
+
+        <button class="button" type="submit">Отправить заказ 💌</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>🎁 Каждая картина собирается с любовью специально для вас 💝</p>
+  </footer>
+</body>
+</html>
